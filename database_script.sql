@@ -1,0 +1,17 @@
+CREATE DATABASE `shopimpact` ;
+
+CREATE TABLE `customer` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `DOB` varchar(45) DEFAULT NULL,
+  `Stream` varchar(45) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE PROCEDURE `GETALLCUSTOMER`()
+BEGIN
+SELECT * FROM CUSTOMER;
+END
